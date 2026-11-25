@@ -25,7 +25,7 @@
             <p class="small-text">YOUR LEARNING PARTNER</p>
             <h1>Learn Better with Your <span>Personal Chatbot</span></h1>
             <p class="intro">
-                Have doubts while learning? Choose a topic, ask questions
+                Choose a topic, ask questions
                 and explore new concepts with your learning assistant.
             </p>
             <a href="#chat" class="start-btn">Start Learning</a>
@@ -89,71 +89,87 @@
         </div>
     </section>
 
-    <section class="chat-section" id="chat">
+    
+<section class="chat-section" id="chat">
 
-        <div class="chat-info">
-            <p class="small-text">LET'S LEARN TOGETHER</p>
-            <h2>Ask Anything. Learn Everything.</h2>
-            <p>
-                Your learning assistant is here to make difficult
-                topics easier to understand. Start with a question
-                and explore something new.
-            </p>
+    <div class="chat-info">
+        <p class="small-text">LET'S LEARN TOGETHER</p>
+        <h2>Ask Anything. Learn Everything.</h2>
 
-            <h3>Try asking:</h3>
-            <ul>
-                <li>What is Object-Oriented Programming?</li>
-                <li>Explain the basics of Python.</li>
-                <li>What is Artificial Intelligence?</li>
-                <li>What is the difference between HTML and CSS?</li>
-            </ul>
+        <p>
+            Your learning assistant is here to make difficult
+            topics easier to understand. Start with a question
+            and explore something new.
+        </p>
+
+        <h3>Try asking:</h3>
+
+        <ul>
+            <li>
+                <button class="suggestion"
+                    data-question="What is Object-Oriented Programming?">
+                    What is Object-Oriented Programming?
+                </button>
+            </li>
+
+            <li>
+                <button class="suggestion"
+                    data-question="Explain the basics of Python.">
+                    Explain the basics of Python.
+                </button>
+            </li>
+
+            <li>
+                <button class="suggestion"
+                    data-question="What is Artificial Intelligence?">
+                    What is Artificial Intelligence?
+                </button>
+            </li>
+
+            <li>
+                <button class="suggestion"
+                    data-question="What is the difference between HTML and CSS?">
+                    What is the difference between HTML and CSS?
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="chat-box">
+
+        <div class="chat-head">
+            <div>
+                <h3>🤖 Learning Assistant</h3>
+                <p>Here to help you learn</p>
+            </div>
+            <span>● Online</span>
         </div>
 
-        <div class="chat-box">
+        <div class="chat-content" id="chatMessages">
 
-            <div class="chat-head">
-                <div>
-                    <h3>🤖 Learning Assistant</h3>
-                    <p>Here to help you learn</p>
-                </div>
-                <span>● Online</span>
-            </div>
-
-            <div class="chat-content">
-
-                <div class="bot-chat">
-                    Hello! Welcome to LearnBot.
-                    What would you like to learn today?
-                </div>
-
-                <div class="user-chat">
-                    I want to learn Java.
-                </div>
-
-                <div class="bot-chat">
-                    That's great! Java is a popular programming
-                    language. We can start with the basics.
-                </div>
-
-                <div class="user-chat">
-                    What is Java?
-                </div>
-
-                <div class="bot-chat">
-                    Java is an object-oriented programming language
-                    used to develop different types of applications.
-                </div>
-
-            </div>
-
-            <div class="chat-bottom">
-                <input type="text" placeholder="Type your question here...">
-                <button>Send ➤</button>
+            <div class="bot-chat">
+                Hello! Welcome to LearnBot.
+                What would you like to learn today?
             </div>
 
         </div>
 
-    </section>
+        <div class="chat-bottom">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your question here..."
+            >
+
+            <button type="button" id="sendBtn">
+                Send ➤
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
 
     <section class="about" id="about">
         <h2>About This Project</h2>
@@ -169,6 +185,6 @@
         <p>Your companion for learning something new every day.</p>
         <p>© 2026 Learning Chatbot</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
